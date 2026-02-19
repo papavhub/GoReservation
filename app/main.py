@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from app.routers import health
+from app.routers import calendar
 
 app = FastAPI(
     title="My FastAPI Service",
@@ -7,7 +7,7 @@ app = FastAPI(
     version="1.0.0"
 )
 
-app.include_router(health.router)
+app.include_router(calendar.router)
 
 @app.get("/")
 def root():
