@@ -1,23 +1,3038 @@
-[
-    {
-      "id": 1,
-      "email": "user1@example.com",
-      "name": "User1",
-      "age": 28,
-      "gender": "F",
-      "phone": "010-4821-9034",
-      "isActive": true,
-      "createdAt": "2024-11-02T13:21:44.123Z"
+{
+  "meta": {
+    "next_event_id": 100,
+    "generated_at": "2026-02-19T06:31:13.846839"
+  },
+  "events": {
+    "evt_001": {
+      "id": "evt_001",
+      "title": "1:1 미팅",
+      "start": "2026-01-24T15:31:13.844829",
+      "end": "2026-01-24T17:31:13.844829",
+      "organizer_id": "emp_068",
+      "attendees": [
+        {
+          "id": "emp_061",
+          "type": "optional",
+          "response": "declined"
+        }
+      ],
+      "location": "회의실 4",
+      "description": null,
+      "is_private": true,
+      "recurrence": null,
+      "created_at": "2026-02-19T06:31:13.844829",
+      "updated_at": "2026-02-19T06:31:13.844829"
     },
-    {
-      "id": 2,
-      "email": "user2@example.com",
-      "name": "User2",
-      "age": 41,
-      "gender": "M",
-      "phone": "010-7734-1182",
-      "isActive": false,
-      "createdAt": "2023-07-18T02:09:10.532Z"
+    "evt_002": {
+      "id": "evt_002",
+      "title": "팀 회의",
+      "start": "2026-03-01T00:31:13.844891",
+      "end": "2026-03-01T01:31:13.844891",
+      "organizer_id": "emp_016",
+      "attendees": [
+        {
+          "id": "emp_065",
+          "type": "required",
+          "response": "declined"
+        },
+        {
+          "id": "emp_050",
+          "type": "optional",
+          "response": "declined"
+        },
+        {
+          "id": "emp_002",
+          "type": "required",
+          "response": "none"
+        },
+        {
+          "id": "emp_035",
+          "type": "optional",
+          "response": "none"
+        },
+        {
+          "id": "emp_040",
+          "type": "optional",
+          "response": "accepted"
+        }
+      ],
+      "location": "회의실 5",
+      "description": null,
+      "is_private": true,
+      "recurrence": null,
+      "created_at": "2026-02-19T06:31:13.844891",
+      "updated_at": "2026-02-19T06:31:13.844891"
+    },
+    "evt_003": {
+      "id": "evt_003",
+      "title": "전사 미팅",
+      "start": "2026-01-24T15:31:13.844914",
+      "end": "2026-01-24T16:31:13.844914",
+      "organizer_id": "emp_038",
+      "attendees": [
+        {
+          "id": "emp_042",
+          "type": "optional",
+          "response": "declined"
+        },
+        {
+          "id": "emp_064",
+          "type": "optional",
+          "response": "accepted"
+        }
+      ],
+      "location": "회의실 3",
+      "description": null,
+      "is_private": false,
+      "recurrence": null,
+      "created_at": "2026-02-19T06:31:13.844914",
+      "updated_at": "2026-02-19T06:31:13.844914"
+    },
+    "evt_004": {
+      "id": "evt_004",
+      "title": "전사 미팅",
+      "start": "2026-02-15T18:31:13.844928",
+      "end": "2026-02-15T20:31:13.844928",
+      "organizer_id": "emp_068",
+      "attendees": [
+        {
+          "id": "emp_024",
+          "type": "optional",
+          "response": "accepted"
+        },
+        {
+          "id": "emp_004",
+          "type": "optional",
+          "response": "accepted"
+        },
+        {
+          "id": "emp_055",
+          "type": "required",
+          "response": "declined"
+        },
+        {
+          "id": "emp_039",
+          "type": "optional",
+          "response": "none"
+        }
+      ],
+      "location": "회의실 4",
+      "description": null,
+      "is_private": true,
+      "recurrence": null,
+      "created_at": "2026-02-19T06:31:13.844928",
+      "updated_at": "2026-02-19T06:31:13.844928"
+    },
+    "evt_005": {
+      "id": "evt_005",
+      "title": "1:1 미팅",
+      "start": "2026-02-07T14:31:13.844941",
+      "end": "2026-02-07T16:31:13.844941",
+      "organizer_id": "emp_021",
+      "attendees": [
+        {
+          "id": "emp_040",
+          "type": "required",
+          "response": "declined"
+        }
+      ],
+      "location": "회의실 1",
+      "description": null,
+      "is_private": true,
+      "recurrence": null,
+      "created_at": "2026-02-19T06:31:13.844941",
+      "updated_at": "2026-02-19T06:31:13.844941"
+    },
+    "evt_006": {
+      "id": "evt_006",
+      "title": "스프린트 회고",
+      "start": "2026-03-17T15:31:13.844953",
+      "end": "2026-03-17T17:31:13.844953",
+      "organizer_id": "emp_020",
+      "attendees": [
+        {
+          "id": "emp_047",
+          "type": "required",
+          "response": "accepted"
+        },
+        {
+          "id": "emp_066",
+          "type": "optional",
+          "response": "accepted"
+        },
+        {
+          "id": "emp_032",
+          "type": "optional",
+          "response": "none"
+        },
+        {
+          "id": "emp_063",
+          "type": "required",
+          "response": "declined"
+        },
+        {
+          "id": "emp_003",
+          "type": "required",
+          "response": "declined"
+        }
+      ],
+      "location": "회의실 4",
+      "description": null,
+      "is_private": false,
+      "recurrence": null,
+      "created_at": "2026-02-19T06:31:13.844953",
+      "updated_at": "2026-02-19T06:31:13.844953"
+    },
+    "evt_007": {
+      "id": "evt_007",
+      "title": "프로젝트 킥오프",
+      "start": "2026-02-09T18:31:13.844967",
+      "end": "2026-02-09T20:31:13.844967",
+      "organizer_id": "emp_043",
+      "attendees": [
+        {
+          "id": "emp_013",
+          "type": "required",
+          "response": "declined"
+        }
+      ],
+      "location": "회의실 5",
+      "description": null,
+      "is_private": false,
+      "recurrence": null,
+      "created_at": "2026-02-19T06:31:13.844967",
+      "updated_at": "2026-02-19T06:31:13.844967"
+    },
+    "evt_008": {
+      "id": "evt_008",
+      "title": "팀 회의",
+      "start": "2026-02-11T20:31:13.844979",
+      "end": "2026-02-11T21:31:13.844979",
+      "organizer_id": "emp_027",
+      "attendees": [
+        {
+          "id": "emp_054",
+          "type": "optional",
+          "response": "accepted"
+        },
+        {
+          "id": "emp_031",
+          "type": "required",
+          "response": "accepted"
+        },
+        {
+          "id": "emp_027",
+          "type": "required",
+          "response": "accepted"
+        },
+        {
+          "id": "emp_060",
+          "type": "required",
+          "response": "none"
+        },
+        {
+          "id": "emp_035",
+          "type": "optional",
+          "response": "accepted"
+        }
+      ],
+      "location": "회의실 1",
+      "description": null,
+      "is_private": true,
+      "recurrence": null,
+      "created_at": "2026-02-19T06:31:13.844979",
+      "updated_at": "2026-02-19T06:31:13.844979"
+    },
+    "evt_009": {
+      "id": "evt_009",
+      "title": "1:1 미팅",
+      "start": "2026-02-04T14:31:13.844994",
+      "end": "2026-02-04T15:31:13.844994",
+      "organizer_id": "emp_054",
+      "attendees": [
+        {
+          "id": "emp_013",
+          "type": "required",
+          "response": "accepted"
+        },
+        {
+          "id": "emp_039",
+          "type": "optional",
+          "response": "none"
+        },
+        {
+          "id": "emp_061",
+          "type": "optional",
+          "response": "declined"
+        },
+        {
+          "id": "emp_035",
+          "type": "required",
+          "response": "none"
+        },
+        {
+          "id": "emp_046",
+          "type": "required",
+          "response": "accepted"
+        }
+      ],
+      "location": "회의실 3",
+      "description": null,
+      "is_private": false,
+      "recurrence": null,
+      "created_at": "2026-02-19T06:31:13.844994",
+      "updated_at": "2026-02-19T06:31:13.844994"
+    },
+    "evt_010": {
+      "id": "evt_010",
+      "title": "프로젝트 킥오프",
+      "start": "2026-03-06T21:31:13.845008",
+      "end": "2026-03-06T22:31:13.845008",
+      "organizer_id": "emp_067",
+      "attendees": [
+        {
+          "id": "emp_046",
+          "type": "optional",
+          "response": "accepted"
+        }
+      ],
+      "location": "회의실 3",
+      "description": null,
+      "is_private": true,
+      "recurrence": null,
+      "created_at": "2026-02-19T06:31:13.845008",
+      "updated_at": "2026-02-19T06:31:13.845008"
+    },
+    "evt_011": {
+      "id": "evt_011",
+      "title": "디자인 리뷰",
+      "start": "2026-01-29T19:31:13.845020",
+      "end": "2026-01-29T21:31:13.845020",
+      "organizer_id": "emp_064",
+      "attendees": [
+        {
+          "id": "emp_017",
+          "type": "required",
+          "response": "none"
+        },
+        {
+          "id": "emp_056",
+          "type": "optional",
+          "response": "none"
+        },
+        {
+          "id": "emp_046",
+          "type": "required",
+          "response": "none"
+        },
+        {
+          "id": "emp_052",
+          "type": "optional",
+          "response": "accepted"
+        },
+        {
+          "id": "emp_035",
+          "type": "required",
+          "response": "accepted"
+        }
+      ],
+      "location": "회의실 3",
+      "description": null,
+      "is_private": false,
+      "recurrence": null,
+      "created_at": "2026-02-19T06:31:13.845020",
+      "updated_at": "2026-02-19T06:31:13.845020"
+    },
+    "evt_012": {
+      "id": "evt_012",
+      "title": "전사 미팅",
+      "start": "2026-02-11T18:31:13.845037",
+      "end": "2026-02-11T20:31:13.845037",
+      "organizer_id": "emp_067",
+      "attendees": [
+        {
+          "id": "emp_056",
+          "type": "required",
+          "response": "none"
+        }
+      ],
+      "location": "회의실 5",
+      "description": null,
+      "is_private": false,
+      "recurrence": null,
+      "created_at": "2026-02-19T06:31:13.845037",
+      "updated_at": "2026-02-19T06:31:13.845037"
+    },
+    "evt_013": {
+      "id": "evt_013",
+      "title": "전사 미팅",
+      "start": "2026-03-18T00:31:13.845048",
+      "end": "2026-03-18T02:31:13.845048",
+      "organizer_id": "emp_034",
+      "attendees": [
+        {
+          "id": "emp_002",
+          "type": "optional",
+          "response": "accepted"
+        },
+        {
+          "id": "emp_029",
+          "type": "optional",
+          "response": "declined"
+        },
+        {
+          "id": "emp_042",
+          "type": "optional",
+          "response": "declined"
+        }
+      ],
+      "location": "회의실 1",
+      "description": null,
+      "is_private": true,
+      "recurrence": null,
+      "created_at": "2026-02-19T06:31:13.845048",
+      "updated_at": "2026-02-19T06:31:13.845048"
+    },
+    "evt_014": {
+      "id": "evt_014",
+      "title": "1:1 미팅",
+      "start": "2026-02-22T18:31:13.845062",
+      "end": "2026-02-22T20:31:13.845062",
+      "organizer_id": "emp_028",
+      "attendees": [
+        {
+          "id": "emp_060",
+          "type": "optional",
+          "response": "declined"
+        },
+        {
+          "id": "emp_059",
+          "type": "optional",
+          "response": "none"
+        },
+        {
+          "id": "emp_048",
+          "type": "required",
+          "response": "accepted"
+        },
+        {
+          "id": "emp_028",
+          "type": "optional",
+          "response": "none"
+        },
+        {
+          "id": "emp_009",
+          "type": "required",
+          "response": "declined"
+        }
+      ],
+      "location": "회의실 2",
+      "description": null,
+      "is_private": false,
+      "recurrence": null,
+      "created_at": "2026-02-19T06:31:13.845062",
+      "updated_at": "2026-02-19T06:31:13.845062"
+    },
+    "evt_015": {
+      "id": "evt_015",
+      "title": "프로젝트 킥오프",
+      "start": "2026-03-19T18:31:13.845078",
+      "end": "2026-03-19T19:31:13.845078",
+      "organizer_id": "emp_046",
+      "attendees": [
+        {
+          "id": "emp_031",
+          "type": "required",
+          "response": "declined"
+        },
+        {
+          "id": "emp_055",
+          "type": "optional",
+          "response": "declined"
+        },
+        {
+          "id": "emp_010",
+          "type": "required",
+          "response": "accepted"
+        },
+        {
+          "id": "emp_057",
+          "type": "required",
+          "response": "accepted"
+        },
+        {
+          "id": "emp_029",
+          "type": "optional",
+          "response": "declined"
+        }
+      ],
+      "location": "회의실 2",
+      "description": null,
+      "is_private": true,
+      "recurrence": null,
+      "created_at": "2026-02-19T06:31:13.845078",
+      "updated_at": "2026-02-19T06:31:13.845078"
+    },
+    "evt_016": {
+      "id": "evt_016",
+      "title": "스프린트 회고",
+      "start": "2026-03-09T17:31:13.845097",
+      "end": "2026-03-09T18:31:13.845097",
+      "organizer_id": "emp_025",
+      "attendees": [
+        {
+          "id": "emp_059",
+          "type": "optional",
+          "response": "none"
+        },
+        {
+          "id": "emp_005",
+          "type": "required",
+          "response": "accepted"
+        }
+      ],
+      "location": "회의실 5",
+      "description": null,
+      "is_private": false,
+      "recurrence": null,
+      "created_at": "2026-02-19T06:31:13.845097",
+      "updated_at": "2026-02-19T06:31:13.845097"
+    },
+    "evt_017": {
+      "id": "evt_017",
+      "title": "프로젝트 킥오프",
+      "start": "2026-03-21T15:31:13.845115",
+      "end": "2026-03-21T17:31:13.845115",
+      "organizer_id": "emp_005",
+      "attendees": [
+        {
+          "id": "emp_053",
+          "type": "optional",
+          "response": "accepted"
+        },
+        {
+          "id": "emp_008",
+          "type": "optional",
+          "response": "accepted"
+        },
+        {
+          "id": "emp_035",
+          "type": "optional",
+          "response": "accepted"
+        }
+      ],
+      "location": "회의실 4",
+      "description": null,
+      "is_private": false,
+      "recurrence": null,
+      "created_at": "2026-02-19T06:31:13.845115",
+      "updated_at": "2026-02-19T06:31:13.845115"
+    },
+    "evt_018": {
+      "id": "evt_018",
+      "title": "프로젝트 킥오프",
+      "start": "2026-02-26T22:31:13.845134",
+      "end": "2026-02-26T23:31:13.845134",
+      "organizer_id": "emp_024",
+      "attendees": [
+        {
+          "id": "emp_031",
+          "type": "optional",
+          "response": "accepted"
+        },
+        {
+          "id": "emp_037",
+          "type": "required",
+          "response": "declined"
+        },
+        {
+          "id": "emp_055",
+          "type": "required",
+          "response": "accepted"
+        },
+        {
+          "id": "emp_035",
+          "type": "required",
+          "response": "accepted"
+        }
+      ],
+      "location": "회의실 2",
+      "description": null,
+      "is_private": false,
+      "recurrence": null,
+      "created_at": "2026-02-19T06:31:13.845134",
+      "updated_at": "2026-02-19T06:31:13.845134"
+    },
+    "evt_019": {
+      "id": "evt_019",
+      "title": "프로젝트 킥오프",
+      "start": "2026-03-15T22:31:13.845154",
+      "end": "2026-03-15T23:31:13.845154",
+      "organizer_id": "emp_017",
+      "attendees": [
+        {
+          "id": "emp_017",
+          "type": "required",
+          "response": "accepted"
+        },
+        {
+          "id": "emp_055",
+          "type": "optional",
+          "response": "accepted"
+        },
+        {
+          "id": "emp_048",
+          "type": "optional",
+          "response": "declined"
+        },
+        {
+          "id": "emp_010",
+          "type": "optional",
+          "response": "declined"
+        }
+      ],
+      "location": "회의실 1",
+      "description": null,
+      "is_private": false,
+      "recurrence": null,
+      "created_at": "2026-02-19T06:31:13.845154",
+      "updated_at": "2026-02-19T06:31:13.845154"
+    },
+    "evt_020": {
+      "id": "evt_020",
+      "title": "1:1 미팅",
+      "start": "2026-03-15T15:31:13.845176",
+      "end": "2026-03-15T16:31:13.845176",
+      "organizer_id": "emp_034",
+      "attendees": [
+        {
+          "id": "emp_043",
+          "type": "optional",
+          "response": "accepted"
+        },
+        {
+          "id": "emp_048",
+          "type": "optional",
+          "response": "accepted"
+        },
+        {
+          "id": "emp_027",
+          "type": "optional",
+          "response": "none"
+        },
+        {
+          "id": "emp_029",
+          "type": "optional",
+          "response": "accepted"
+        },
+        {
+          "id": "emp_054",
+          "type": "optional",
+          "response": "accepted"
+        }
+      ],
+      "location": "회의실 1",
+      "description": null,
+      "is_private": true,
+      "recurrence": null,
+      "created_at": "2026-02-19T06:31:13.845176",
+      "updated_at": "2026-02-19T06:31:13.845176"
+    },
+    "evt_021": {
+      "id": "evt_021",
+      "title": "전사 미팅",
+      "start": "2026-01-29T22:31:13.845198",
+      "end": "2026-01-29T23:31:13.845198",
+      "organizer_id": "emp_012",
+      "attendees": [
+        {
+          "id": "emp_058",
+          "type": "optional",
+          "response": "none"
+        },
+        {
+          "id": "emp_033",
+          "type": "required",
+          "response": "declined"
+        },
+        {
+          "id": "emp_032",
+          "type": "required",
+          "response": "none"
+        },
+        {
+          "id": "emp_068",
+          "type": "optional",
+          "response": "accepted"
+        },
+        {
+          "id": "emp_055",
+          "type": "required",
+          "response": "none"
+        }
+      ],
+      "location": "회의실 1",
+      "description": null,
+      "is_private": true,
+      "recurrence": null,
+      "created_at": "2026-02-19T06:31:13.845198",
+      "updated_at": "2026-02-19T06:31:13.845198"
+    },
+    "evt_022": {
+      "id": "evt_022",
+      "title": "1:1 미팅",
+      "start": "2026-02-26T19:31:13.845590",
+      "end": "2026-02-26T20:31:13.845590",
+      "organizer_id": "emp_069",
+      "attendees": [
+        {
+          "id": "emp_016",
+          "type": "required",
+          "response": "accepted"
+        },
+        {
+          "id": "emp_061",
+          "type": "required",
+          "response": "declined"
+        },
+        {
+          "id": "emp_040",
+          "type": "optional",
+          "response": "accepted"
+        },
+        {
+          "id": "emp_014",
+          "type": "optional",
+          "response": "none"
+        }
+      ],
+      "location": "회의실 2",
+      "description": null,
+      "is_private": true,
+      "recurrence": null,
+      "created_at": "2026-02-19T06:31:13.845590",
+      "updated_at": "2026-02-19T06:31:13.845590"
+    },
+    "evt_023": {
+      "id": "evt_023",
+      "title": "디자인 리뷰",
+      "start": "2026-03-17T21:31:13.845621",
+      "end": "2026-03-17T22:31:13.845621",
+      "organizer_id": "emp_041",
+      "attendees": [
+        {
+          "id": "emp_042",
+          "type": "optional",
+          "response": "none"
+        },
+        {
+          "id": "emp_016",
+          "type": "required",
+          "response": "accepted"
+        },
+        {
+          "id": "emp_015",
+          "type": "required",
+          "response": "accepted"
+        }
+      ],
+      "location": "회의실 4",
+      "description": null,
+      "is_private": true,
+      "recurrence": null,
+      "created_at": "2026-02-19T06:31:13.845621",
+      "updated_at": "2026-02-19T06:31:13.845621"
+    },
+    "evt_024": {
+      "id": "evt_024",
+      "title": "프로젝트 킥오프",
+      "start": "2026-02-02T22:31:13.845635",
+      "end": "2026-02-03T00:31:13.845635",
+      "organizer_id": "emp_015",
+      "attendees": [
+        {
+          "id": "emp_029",
+          "type": "required",
+          "response": "declined"
+        },
+        {
+          "id": "emp_018",
+          "type": "optional",
+          "response": "declined"
+        },
+        {
+          "id": "emp_034",
+          "type": "optional",
+          "response": "declined"
+        },
+        {
+          "id": "emp_022",
+          "type": "required",
+          "response": "declined"
+        }
+      ],
+      "location": "회의실 2",
+      "description": null,
+      "is_private": true,
+      "recurrence": null,
+      "created_at": "2026-02-19T06:31:13.845635",
+      "updated_at": "2026-02-19T06:31:13.845635"
+    },
+    "evt_025": {
+      "id": "evt_025",
+      "title": "1:1 미팅",
+      "start": "2026-02-09T18:31:13.845654",
+      "end": "2026-02-09T20:31:13.845654",
+      "organizer_id": "emp_060",
+      "attendees": [
+        {
+          "id": "emp_042",
+          "type": "required",
+          "response": "declined"
+        },
+        {
+          "id": "emp_050",
+          "type": "required",
+          "response": "declined"
+        },
+        {
+          "id": "emp_059",
+          "type": "required",
+          "response": "none"
+        },
+        {
+          "id": "emp_069",
+          "type": "required",
+          "response": "none"
+        },
+        {
+          "id": "emp_028",
+          "type": "required",
+          "response": "none"
+        }
+      ],
+      "location": "회의실 1",
+      "description": null,
+      "is_private": true,
+      "recurrence": null,
+      "created_at": "2026-02-19T06:31:13.845654",
+      "updated_at": "2026-02-19T06:31:13.845654"
+    },
+    "evt_026": {
+      "id": "evt_026",
+      "title": "팀 회의",
+      "start": "2026-03-16T22:31:13.845669",
+      "end": "2026-03-17T00:31:13.845669",
+      "organizer_id": "emp_021",
+      "attendees": [
+        {
+          "id": "emp_066",
+          "type": "required",
+          "response": "none"
+        },
+        {
+          "id": "emp_032",
+          "type": "optional",
+          "response": "declined"
+        },
+        {
+          "id": "emp_040",
+          "type": "required",
+          "response": "declined"
+        },
+        {
+          "id": "emp_052",
+          "type": "required",
+          "response": "accepted"
+        },
+        {
+          "id": "emp_054",
+          "type": "optional",
+          "response": "declined"
+        }
+      ],
+      "location": "회의실 2",
+      "description": null,
+      "is_private": true,
+      "recurrence": null,
+      "created_at": "2026-02-19T06:31:13.845669",
+      "updated_at": "2026-02-19T06:31:13.845669"
+    },
+    "evt_027": {
+      "id": "evt_027",
+      "title": "1:1 미팅",
+      "start": "2026-01-29T21:31:13.845685",
+      "end": "2026-01-29T22:31:13.845685",
+      "organizer_id": "emp_011",
+      "attendees": [
+        {
+          "id": "emp_046",
+          "type": "optional",
+          "response": "accepted"
+        },
+        {
+          "id": "emp_012",
+          "type": "required",
+          "response": "none"
+        },
+        {
+          "id": "emp_018",
+          "type": "optional",
+          "response": "declined"
+        },
+        {
+          "id": "emp_022",
+          "type": "optional",
+          "response": "declined"
+        },
+        {
+          "id": "emp_010",
+          "type": "optional",
+          "response": "none"
+        }
+      ],
+      "location": "회의실 1",
+      "description": null,
+      "is_private": true,
+      "recurrence": null,
+      "created_at": "2026-02-19T06:31:13.845685",
+      "updated_at": "2026-02-19T06:31:13.845685"
+    },
+    "evt_028": {
+      "id": "evt_028",
+      "title": "전사 미팅",
+      "start": "2026-02-16T17:31:13.845699",
+      "end": "2026-02-16T19:31:13.845699",
+      "organizer_id": "emp_025",
+      "attendees": [
+        {
+          "id": "emp_040",
+          "type": "optional",
+          "response": "accepted"
+        },
+        {
+          "id": "emp_059",
+          "type": "optional",
+          "response": "accepted"
+        },
+        {
+          "id": "emp_014",
+          "type": "required",
+          "response": "none"
+        }
+      ],
+      "location": "회의실 3",
+      "description": null,
+      "is_private": false,
+      "recurrence": null,
+      "created_at": "2026-02-19T06:31:13.845699",
+      "updated_at": "2026-02-19T06:31:13.845699"
+    },
+    "evt_029": {
+      "id": "evt_029",
+      "title": "팀 회의",
+      "start": "2026-01-21T23:31:13.845713",
+      "end": "2026-01-22T00:31:13.845713",
+      "organizer_id": "emp_029",
+      "attendees": [
+        {
+          "id": "emp_037",
+          "type": "required",
+          "response": "declined"
+        },
+        {
+          "id": "emp_024",
+          "type": "optional",
+          "response": "none"
+        },
+        {
+          "id": "emp_017",
+          "type": "required",
+          "response": "declined"
+        },
+        {
+          "id": "emp_046",
+          "type": "optional",
+          "response": "accepted"
+        }
+      ],
+      "location": "회의실 1",
+      "description": null,
+      "is_private": true,
+      "recurrence": null,
+      "created_at": "2026-02-19T06:31:13.845713",
+      "updated_at": "2026-02-19T06:31:13.845713"
+    },
+    "evt_030": {
+      "id": "evt_030",
+      "title": "스프린트 회고",
+      "start": "2026-02-22T22:31:13.845730",
+      "end": "2026-02-22T23:31:13.845730",
+      "organizer_id": "emp_008",
+      "attendees": [
+        {
+          "id": "emp_008",
+          "type": "required",
+          "response": "declined"
+        }
+      ],
+      "location": "회의실 4",
+      "description": null,
+      "is_private": false,
+      "recurrence": null,
+      "created_at": "2026-02-19T06:31:13.845730",
+      "updated_at": "2026-02-19T06:31:13.845730"
+    },
+    "evt_031": {
+      "id": "evt_031",
+      "title": "전사 미팅",
+      "start": "2026-02-26T20:31:13.845742",
+      "end": "2026-02-26T22:31:13.845742",
+      "organizer_id": "emp_007",
+      "attendees": [
+        {
+          "id": "emp_010",
+          "type": "required",
+          "response": "declined"
+        },
+        {
+          "id": "emp_013",
+          "type": "required",
+          "response": "accepted"
+        }
+      ],
+      "location": "회의실 4",
+      "description": null,
+      "is_private": false,
+      "recurrence": null,
+      "created_at": "2026-02-19T06:31:13.845742",
+      "updated_at": "2026-02-19T06:31:13.845742"
+    },
+    "evt_032": {
+      "id": "evt_032",
+      "title": "팀 회의",
+      "start": "2026-03-19T00:31:13.845754",
+      "end": "2026-03-19T01:31:13.845754",
+      "organizer_id": "emp_050",
+      "attendees": [
+        {
+          "id": "emp_063",
+          "type": "required",
+          "response": "declined"
+        },
+        {
+          "id": "emp_009",
+          "type": "required",
+          "response": "accepted"
+        },
+        {
+          "id": "emp_014",
+          "type": "required",
+          "response": "declined"
+        },
+        {
+          "id": "emp_035",
+          "type": "optional",
+          "response": "accepted"
+        }
+      ],
+      "location": "회의실 4",
+      "description": null,
+      "is_private": false,
+      "recurrence": null,
+      "created_at": "2026-02-19T06:31:13.845754",
+      "updated_at": "2026-02-19T06:31:13.845754"
+    },
+    "evt_033": {
+      "id": "evt_033",
+      "title": "팀 회의",
+      "start": "2026-01-22T14:31:13.845766",
+      "end": "2026-01-22T16:31:13.845766",
+      "organizer_id": "emp_006",
+      "attendees": [
+        {
+          "id": "emp_026",
+          "type": "required",
+          "response": "declined"
+        }
+      ],
+      "location": "회의실 4",
+      "description": null,
+      "is_private": false,
+      "recurrence": null,
+      "created_at": "2026-02-19T06:31:13.845766",
+      "updated_at": "2026-02-19T06:31:13.845766"
+    },
+    "evt_034": {
+      "id": "evt_034",
+      "title": "디자인 리뷰",
+      "start": "2026-03-06T16:31:13.845778",
+      "end": "2026-03-06T17:31:13.845778",
+      "organizer_id": "emp_026",
+      "attendees": [
+        {
+          "id": "emp_054",
+          "type": "required",
+          "response": "declined"
+        },
+        {
+          "id": "emp_058",
+          "type": "optional",
+          "response": "declined"
+        },
+        {
+          "id": "emp_015",
+          "type": "required",
+          "response": "none"
+        },
+        {
+          "id": "emp_044",
+          "type": "optional",
+          "response": "accepted"
+        }
+      ],
+      "location": "회의실 3",
+      "description": null,
+      "is_private": false,
+      "recurrence": null,
+      "created_at": "2026-02-19T06:31:13.845778",
+      "updated_at": "2026-02-19T06:31:13.845778"
+    },
+    "evt_035": {
+      "id": "evt_035",
+      "title": "전사 미팅",
+      "start": "2026-01-28T00:31:13.845791",
+      "end": "2026-01-28T02:31:13.845791",
+      "organizer_id": "emp_015",
+      "attendees": [
+        {
+          "id": "emp_065",
+          "type": "optional",
+          "response": "declined"
+        },
+        {
+          "id": "emp_003",
+          "type": "optional",
+          "response": "declined"
+        },
+        {
+          "id": "emp_069",
+          "type": "optional",
+          "response": "accepted"
+        }
+      ],
+      "location": "회의실 4",
+      "description": null,
+      "is_private": true,
+      "recurrence": null,
+      "created_at": "2026-02-19T06:31:13.845791",
+      "updated_at": "2026-02-19T06:31:13.845791"
+    },
+    "evt_036": {
+      "id": "evt_036",
+      "title": "디자인 리뷰",
+      "start": "2026-03-07T22:31:13.845803",
+      "end": "2026-03-08T00:31:13.845803",
+      "organizer_id": "emp_032",
+      "attendees": [
+        {
+          "id": "emp_010",
+          "type": "optional",
+          "response": "declined"
+        },
+        {
+          "id": "emp_064",
+          "type": "optional",
+          "response": "none"
+        }
+      ],
+      "location": "회의실 3",
+      "description": null,
+      "is_private": true,
+      "recurrence": null,
+      "created_at": "2026-02-19T06:31:13.845803",
+      "updated_at": "2026-02-19T06:31:13.845803"
+    },
+    "evt_037": {
+      "id": "evt_037",
+      "title": "팀 회의",
+      "start": "2026-02-01T14:31:13.845814",
+      "end": "2026-02-01T15:31:13.845814",
+      "organizer_id": "emp_061",
+      "attendees": [
+        {
+          "id": "emp_020",
+          "type": "optional",
+          "response": "none"
+        },
+        {
+          "id": "emp_066",
+          "type": "optional",
+          "response": "accepted"
+        },
+        {
+          "id": "emp_039",
+          "type": "optional",
+          "response": "none"
+        }
+      ],
+      "location": "회의실 4",
+      "description": null,
+      "is_private": false,
+      "recurrence": null,
+      "created_at": "2026-02-19T06:31:13.845814",
+      "updated_at": "2026-02-19T06:31:13.845814"
+    },
+    "evt_038": {
+      "id": "evt_038",
+      "title": "1:1 미팅",
+      "start": "2026-03-18T21:31:13.845826",
+      "end": "2026-03-18T22:31:13.845826",
+      "organizer_id": "emp_035",
+      "attendees": [
+        {
+          "id": "emp_009",
+          "type": "optional",
+          "response": "accepted"
+        },
+        {
+          "id": "emp_033",
+          "type": "optional",
+          "response": "none"
+        },
+        {
+          "id": "emp_057",
+          "type": "required",
+          "response": "none"
+        }
+      ],
+      "location": "회의실 5",
+      "description": null,
+      "is_private": true,
+      "recurrence": null,
+      "created_at": "2026-02-19T06:31:13.845826",
+      "updated_at": "2026-02-19T06:31:13.845826"
+    },
+    "evt_039": {
+      "id": "evt_039",
+      "title": "디자인 리뷰",
+      "start": "2026-03-12T18:31:13.845839",
+      "end": "2026-03-12T20:31:13.845839",
+      "organizer_id": "emp_053",
+      "attendees": [
+        {
+          "id": "emp_050",
+          "type": "required",
+          "response": "declined"
+        },
+        {
+          "id": "emp_006",
+          "type": "required",
+          "response": "declined"
+        },
+        {
+          "id": "emp_067",
+          "type": "required",
+          "response": "accepted"
+        },
+        {
+          "id": "emp_036",
+          "type": "required",
+          "response": "none"
+        }
+      ],
+      "location": "회의실 3",
+      "description": null,
+      "is_private": true,
+      "recurrence": null,
+      "created_at": "2026-02-19T06:31:13.845839",
+      "updated_at": "2026-02-19T06:31:13.845839"
+    },
+    "evt_040": {
+      "id": "evt_040",
+      "title": "프로젝트 킥오프",
+      "start": "2026-02-08T21:31:13.845851",
+      "end": "2026-02-08T22:31:13.845851",
+      "organizer_id": "emp_031",
+      "attendees": [
+        {
+          "id": "emp_053",
+          "type": "required",
+          "response": "declined"
+        }
+      ],
+      "location": "회의실 2",
+      "description": null,
+      "is_private": false,
+      "recurrence": null,
+      "created_at": "2026-02-19T06:31:13.845851",
+      "updated_at": "2026-02-19T06:31:13.845851"
+    },
+    "evt_041": {
+      "id": "evt_041",
+      "title": "전사 미팅",
+      "start": "2026-01-28T21:31:13.845861",
+      "end": "2026-01-28T23:31:13.845861",
+      "organizer_id": "emp_053",
+      "attendees": [
+        {
+          "id": "emp_040",
+          "type": "optional",
+          "response": "declined"
+        },
+        {
+          "id": "emp_009",
+          "type": "optional",
+          "response": "declined"
+        },
+        {
+          "id": "emp_008",
+          "type": "optional",
+          "response": "none"
+        }
+      ],
+      "location": "회의실 5",
+      "description": null,
+      "is_private": false,
+      "recurrence": null,
+      "created_at": "2026-02-19T06:31:13.845861",
+      "updated_at": "2026-02-19T06:31:13.845861"
+    },
+    "evt_042": {
+      "id": "evt_042",
+      "title": "프로젝트 킥오프",
+      "start": "2026-01-23T00:31:13.845874",
+      "end": "2026-01-23T01:31:13.845874",
+      "organizer_id": "emp_013",
+      "attendees": [
+        {
+          "id": "emp_052",
+          "type": "optional",
+          "response": "accepted"
+        },
+        {
+          "id": "emp_036",
+          "type": "required",
+          "response": "accepted"
+        },
+        {
+          "id": "emp_060",
+          "type": "optional",
+          "response": "none"
+        },
+        {
+          "id": "emp_035",
+          "type": "optional",
+          "response": "accepted"
+        }
+      ],
+      "location": "회의실 5",
+      "description": null,
+      "is_private": false,
+      "recurrence": null,
+      "created_at": "2026-02-19T06:31:13.845874",
+      "updated_at": "2026-02-19T06:31:13.845874"
+    },
+    "evt_043": {
+      "id": "evt_043",
+      "title": "1:1 미팅",
+      "start": "2026-02-09T20:31:13.845886",
+      "end": "2026-02-09T21:31:13.845886",
+      "organizer_id": "emp_062",
+      "attendees": [
+        {
+          "id": "emp_057",
+          "type": "optional",
+          "response": "none"
+        }
+      ],
+      "location": "회의실 3",
+      "description": null,
+      "is_private": true,
+      "recurrence": null,
+      "created_at": "2026-02-19T06:31:13.845886",
+      "updated_at": "2026-02-19T06:31:13.845886"
+    },
+    "evt_044": {
+      "id": "evt_044",
+      "title": "프로젝트 킥오프",
+      "start": "2026-02-11T22:31:13.845903",
+      "end": "2026-02-12T00:31:13.845903",
+      "organizer_id": "emp_010",
+      "attendees": [
+        {
+          "id": "emp_034",
+          "type": "optional",
+          "response": "none"
+        },
+        {
+          "id": "emp_049",
+          "type": "required",
+          "response": "declined"
+        }
+      ],
+      "location": "회의실 4",
+      "description": null,
+      "is_private": true,
+      "recurrence": null,
+      "created_at": "2026-02-19T06:31:13.845903",
+      "updated_at": "2026-02-19T06:31:13.845903"
+    },
+    "evt_045": {
+      "id": "evt_045",
+      "title": "전사 미팅",
+      "start": "2026-01-31T22:31:13.845917",
+      "end": "2026-01-31T23:31:13.845917",
+      "organizer_id": "emp_028",
+      "attendees": [
+        {
+          "id": "emp_020",
+          "type": "required",
+          "response": "accepted"
+        },
+        {
+          "id": "emp_037",
+          "type": "required",
+          "response": "accepted"
+        },
+        {
+          "id": "emp_058",
+          "type": "required",
+          "response": "accepted"
+        }
+      ],
+      "location": "회의실 2",
+      "description": null,
+      "is_private": true,
+      "recurrence": null,
+      "created_at": "2026-02-19T06:31:13.845917",
+      "updated_at": "2026-02-19T06:31:13.845917"
+    },
+    "evt_046": {
+      "id": "evt_046",
+      "title": "팀 회의",
+      "start": "2026-02-02T21:31:13.845933",
+      "end": "2026-02-02T22:31:13.845933",
+      "organizer_id": "emp_039",
+      "attendees": [
+        {
+          "id": "emp_032",
+          "type": "optional",
+          "response": "accepted"
+        },
+        {
+          "id": "emp_013",
+          "type": "optional",
+          "response": "declined"
+        },
+        {
+          "id": "emp_068",
+          "type": "optional",
+          "response": "declined"
+        },
+        {
+          "id": "emp_038",
+          "type": "required",
+          "response": "declined"
+        },
+        {
+          "id": "emp_061",
+          "type": "optional",
+          "response": "none"
+        }
+      ],
+      "location": "회의실 5",
+      "description": null,
+      "is_private": true,
+      "recurrence": null,
+      "created_at": "2026-02-19T06:31:13.845933",
+      "updated_at": "2026-02-19T06:31:13.845933"
+    },
+    "evt_047": {
+      "id": "evt_047",
+      "title": "1:1 미팅",
+      "start": "2026-03-13T17:31:13.845947",
+      "end": "2026-03-13T19:31:13.845947",
+      "organizer_id": "emp_004",
+      "attendees": [
+        {
+          "id": "emp_033",
+          "type": "required",
+          "response": "declined"
+        },
+        {
+          "id": "emp_017",
+          "type": "optional",
+          "response": "declined"
+        },
+        {
+          "id": "emp_035",
+          "type": "optional",
+          "response": "accepted"
+        }
+      ],
+      "location": "회의실 4",
+      "description": null,
+      "is_private": false,
+      "recurrence": null,
+      "created_at": "2026-02-19T06:31:13.845947",
+      "updated_at": "2026-02-19T06:31:13.845947"
+    },
+    "evt_048": {
+      "id": "evt_048",
+      "title": "팀 회의",
+      "start": "2026-02-05T18:31:13.845960",
+      "end": "2026-02-05T19:31:13.845960",
+      "organizer_id": "emp_031",
+      "attendees": [
+        {
+          "id": "emp_064",
+          "type": "optional",
+          "response": "accepted"
+        },
+        {
+          "id": "emp_023",
+          "type": "required",
+          "response": "accepted"
+        },
+        {
+          "id": "emp_054",
+          "type": "optional",
+          "response": "declined"
+        },
+        {
+          "id": "emp_055",
+          "type": "optional",
+          "response": "accepted"
+        },
+        {
+          "id": "emp_044",
+          "type": "required",
+          "response": "accepted"
+        }
+      ],
+      "location": "회의실 1",
+      "description": null,
+      "is_private": false,
+      "recurrence": null,
+      "created_at": "2026-02-19T06:31:13.845960",
+      "updated_at": "2026-02-19T06:31:13.845960"
+    },
+    "evt_049": {
+      "id": "evt_049",
+      "title": "디자인 리뷰",
+      "start": "2026-02-05T14:31:13.845975",
+      "end": "2026-02-05T16:31:13.845975",
+      "organizer_id": "emp_067",
+      "attendees": [
+        {
+          "id": "emp_008",
+          "type": "required",
+          "response": "declined"
+        },
+        {
+          "id": "emp_048",
+          "type": "optional",
+          "response": "declined"
+        },
+        {
+          "id": "emp_047",
+          "type": "required",
+          "response": "declined"
+        },
+        {
+          "id": "emp_043",
+          "type": "optional",
+          "response": "accepted"
+        },
+        {
+          "id": "emp_035",
+          "type": "optional",
+          "response": "none"
+        }
+      ],
+      "location": "회의실 5",
+      "description": null,
+      "is_private": false,
+      "recurrence": null,
+      "created_at": "2026-02-19T06:31:13.845975",
+      "updated_at": "2026-02-19T06:31:13.845975"
+    },
+    "evt_050": {
+      "id": "evt_050",
+      "title": "1:1 미팅",
+      "start": "2026-01-20T21:31:13.845988",
+      "end": "2026-01-20T23:31:13.845988",
+      "organizer_id": "emp_043",
+      "attendees": [
+        {
+          "id": "emp_051",
+          "type": "optional",
+          "response": "declined"
+        },
+        {
+          "id": "emp_022",
+          "type": "required",
+          "response": "none"
+        },
+        {
+          "id": "emp_065",
+          "type": "optional",
+          "response": "declined"
+        },
+        {
+          "id": "emp_045",
+          "type": "optional",
+          "response": "declined"
+        }
+      ],
+      "location": "회의실 1",
+      "description": null,
+      "is_private": true,
+      "recurrence": null,
+      "created_at": "2026-02-19T06:31:13.845988",
+      "updated_at": "2026-02-19T06:31:13.845988"
+    },
+    "evt_051": {
+      "id": "evt_051",
+      "title": "전사 미팅",
+      "start": "2026-02-09T16:31:13.846001",
+      "end": "2026-02-09T17:31:13.846001",
+      "organizer_id": "emp_024",
+      "attendees": [
+        {
+          "id": "emp_036",
+          "type": "required",
+          "response": "none"
+        },
+        {
+          "id": "emp_003",
+          "type": "optional",
+          "response": "accepted"
+        },
+        {
+          "id": "emp_048",
+          "type": "optional",
+          "response": "accepted"
+        },
+        {
+          "id": "emp_015",
+          "type": "required",
+          "response": "declined"
+        },
+        {
+          "id": "emp_008",
+          "type": "optional",
+          "response": "accepted"
+        }
+      ],
+      "location": "회의실 2",
+      "description": null,
+      "is_private": false,
+      "recurrence": null,
+      "created_at": "2026-02-19T06:31:13.846001",
+      "updated_at": "2026-02-19T06:31:13.846001"
+    },
+    "evt_052": {
+      "id": "evt_052",
+      "title": "전사 미팅",
+      "start": "2026-02-19T18:31:13.846014",
+      "end": "2026-02-19T19:31:13.846014",
+      "organizer_id": "emp_004",
+      "attendees": [
+        {
+          "id": "emp_055",
+          "type": "optional",
+          "response": "declined"
+        },
+        {
+          "id": "emp_052",
+          "type": "optional",
+          "response": "none"
+        }
+      ],
+      "location": "회의실 2",
+      "description": null,
+      "is_private": false,
+      "recurrence": null,
+      "created_at": "2026-02-19T06:31:13.846014",
+      "updated_at": "2026-02-19T06:31:13.846014"
+    },
+    "evt_053": {
+      "id": "evt_053",
+      "title": "프로젝트 킥오프",
+      "start": "2026-03-08T18:31:13.846026",
+      "end": "2026-03-08T20:31:13.846026",
+      "organizer_id": "emp_014",
+      "attendees": [
+        {
+          "id": "emp_065",
+          "type": "optional",
+          "response": "accepted"
+        }
+      ],
+      "location": "회의실 1",
+      "description": null,
+      "is_private": true,
+      "recurrence": null,
+      "created_at": "2026-02-19T06:31:13.846026",
+      "updated_at": "2026-02-19T06:31:13.846026"
+    },
+    "evt_054": {
+      "id": "evt_054",
+      "title": "1:1 미팅",
+      "start": "2026-03-10T19:31:13.846037",
+      "end": "2026-03-10T21:31:13.846037",
+      "organizer_id": "emp_048",
+      "attendees": [
+        {
+          "id": "emp_054",
+          "type": "optional",
+          "response": "declined"
+        }
+      ],
+      "location": "회의실 1",
+      "description": null,
+      "is_private": false,
+      "recurrence": null,
+      "created_at": "2026-02-19T06:31:13.846037",
+      "updated_at": "2026-02-19T06:31:13.846037"
+    },
+    "evt_055": {
+      "id": "evt_055",
+      "title": "스프린트 회고",
+      "start": "2026-02-21T17:31:13.846048",
+      "end": "2026-02-21T18:31:13.846048",
+      "organizer_id": "emp_001",
+      "attendees": [
+        {
+          "id": "emp_055",
+          "type": "required",
+          "response": "declined"
+        },
+        {
+          "id": "emp_069",
+          "type": "optional",
+          "response": "accepted"
+        },
+        {
+          "id": "emp_003",
+          "type": "required",
+          "response": "declined"
+        },
+        {
+          "id": "emp_007",
+          "type": "required",
+          "response": "none"
+        },
+        {
+          "id": "emp_017",
+          "type": "optional",
+          "response": "declined"
+        }
+      ],
+      "location": "회의실 1",
+      "description": null,
+      "is_private": true,
+      "recurrence": null,
+      "created_at": "2026-02-19T06:31:13.846048",
+      "updated_at": "2026-02-19T06:31:13.846048"
+    },
+    "evt_056": {
+      "id": "evt_056",
+      "title": "팀 회의",
+      "start": "2026-03-06T00:31:13.846063",
+      "end": "2026-03-06T01:31:13.846063",
+      "organizer_id": "emp_027",
+      "attendees": [
+        {
+          "id": "emp_020",
+          "type": "optional",
+          "response": "none"
+        },
+        {
+          "id": "emp_059",
+          "type": "optional",
+          "response": "declined"
+        },
+        {
+          "id": "emp_048",
+          "type": "optional",
+          "response": "none"
+        },
+        {
+          "id": "emp_030",
+          "type": "optional",
+          "response": "none"
+        },
+        {
+          "id": "emp_047",
+          "type": "required",
+          "response": "none"
+        }
+      ],
+      "location": "회의실 5",
+      "description": null,
+      "is_private": false,
+      "recurrence": null,
+      "created_at": "2026-02-19T06:31:13.846063",
+      "updated_at": "2026-02-19T06:31:13.846063"
+    },
+    "evt_057": {
+      "id": "evt_057",
+      "title": "1:1 미팅",
+      "start": "2026-01-26T17:31:13.846076",
+      "end": "2026-01-26T18:31:13.846076",
+      "organizer_id": "emp_039",
+      "attendees": [
+        {
+          "id": "emp_034",
+          "type": "optional",
+          "response": "accepted"
+        },
+        {
+          "id": "emp_033",
+          "type": "required",
+          "response": "accepted"
+        },
+        {
+          "id": "emp_047",
+          "type": "required",
+          "response": "declined"
+        }
+      ],
+      "location": "회의실 3",
+      "description": null,
+      "is_private": true,
+      "recurrence": null,
+      "created_at": "2026-02-19T06:31:13.846076",
+      "updated_at": "2026-02-19T06:31:13.846076"
+    },
+    "evt_058": {
+      "id": "evt_058",
+      "title": "팀 회의",
+      "start": "2026-02-07T20:31:13.846089",
+      "end": "2026-02-07T22:31:13.846089",
+      "organizer_id": "emp_061",
+      "attendees": [
+        {
+          "id": "emp_032",
+          "type": "required",
+          "response": "declined"
+        },
+        {
+          "id": "emp_004",
+          "type": "required",
+          "response": "accepted"
+        },
+        {
+          "id": "emp_041",
+          "type": "optional",
+          "response": "declined"
+        },
+        {
+          "id": "emp_034",
+          "type": "required",
+          "response": "declined"
+        }
+      ],
+      "location": "회의실 3",
+      "description": null,
+      "is_private": true,
+      "recurrence": null,
+      "created_at": "2026-02-19T06:31:13.846089",
+      "updated_at": "2026-02-19T06:31:13.846089"
+    },
+    "evt_059": {
+      "id": "evt_059",
+      "title": "전사 미팅",
+      "start": "2026-02-14T21:31:13.846107",
+      "end": "2026-02-14T23:31:13.846107",
+      "organizer_id": "emp_032",
+      "attendees": [
+        {
+          "id": "emp_036",
+          "type": "optional",
+          "response": "accepted"
+        },
+        {
+          "id": "emp_016",
+          "type": "optional",
+          "response": "declined"
+        },
+        {
+          "id": "emp_007",
+          "type": "required",
+          "response": "none"
+        }
+      ],
+      "location": "회의실 5",
+      "description": null,
+      "is_private": true,
+      "recurrence": null,
+      "created_at": "2026-02-19T06:31:13.846107",
+      "updated_at": "2026-02-19T06:31:13.846107"
+    },
+    "evt_060": {
+      "id": "evt_060",
+      "title": "디자인 리뷰",
+      "start": "2026-02-26T23:31:13.846123",
+      "end": "2026-02-27T01:31:13.846123",
+      "organizer_id": "emp_066",
+      "attendees": [
+        {
+          "id": "emp_001",
+          "type": "optional",
+          "response": "accepted"
+        },
+        {
+          "id": "emp_064",
+          "type": "optional",
+          "response": "declined"
+        }
+      ],
+      "location": "회의실 5",
+      "description": null,
+      "is_private": false,
+      "recurrence": null,
+      "created_at": "2026-02-19T06:31:13.846123",
+      "updated_at": "2026-02-19T06:31:13.846123"
+    },
+    "evt_061": {
+      "id": "evt_061",
+      "title": "디자인 리뷰",
+      "start": "2026-01-31T23:31:13.846137",
+      "end": "2026-02-01T00:31:13.846137",
+      "organizer_id": "emp_020",
+      "attendees": [
+        {
+          "id": "emp_061",
+          "type": "required",
+          "response": "accepted"
+        }
+      ],
+      "location": "회의실 1",
+      "description": null,
+      "is_private": false,
+      "recurrence": null,
+      "created_at": "2026-02-19T06:31:13.846137",
+      "updated_at": "2026-02-19T06:31:13.846137"
+    },
+    "evt_062": {
+      "id": "evt_062",
+      "title": "디자인 리뷰",
+      "start": "2026-02-17T18:31:13.846150",
+      "end": "2026-02-17T19:31:13.846150",
+      "organizer_id": "emp_044",
+      "attendees": [
+        {
+          "id": "emp_043",
+          "type": "required",
+          "response": "declined"
+        },
+        {
+          "id": "emp_006",
+          "type": "required",
+          "response": "declined"
+        },
+        {
+          "id": "emp_046",
+          "type": "required",
+          "response": "accepted"
+        }
+      ],
+      "location": "회의실 4",
+      "description": null,
+      "is_private": false,
+      "recurrence": null,
+      "created_at": "2026-02-19T06:31:13.846150",
+      "updated_at": "2026-02-19T06:31:13.846150"
+    },
+    "evt_063": {
+      "id": "evt_063",
+      "title": "전사 미팅",
+      "start": "2026-02-11T19:31:13.846162",
+      "end": "2026-02-11T20:31:13.846162",
+      "organizer_id": "emp_055",
+      "attendees": [
+        {
+          "id": "emp_031",
+          "type": "optional",
+          "response": "accepted"
+        }
+      ],
+      "location": "회의실 3",
+      "description": null,
+      "is_private": false,
+      "recurrence": null,
+      "created_at": "2026-02-19T06:31:13.846162",
+      "updated_at": "2026-02-19T06:31:13.846162"
+    },
+    "evt_064": {
+      "id": "evt_064",
+      "title": "디자인 리뷰",
+      "start": "2026-03-03T00:31:13.846175",
+      "end": "2026-03-03T02:31:13.846175",
+      "organizer_id": "emp_051",
+      "attendees": [
+        {
+          "id": "emp_014",
+          "type": "optional",
+          "response": "accepted"
+        },
+        {
+          "id": "emp_013",
+          "type": "optional",
+          "response": "none"
+        },
+        {
+          "id": "emp_029",
+          "type": "optional",
+          "response": "declined"
+        },
+        {
+          "id": "emp_017",
+          "type": "optional",
+          "response": "none"
+        }
+      ],
+      "location": "회의실 5",
+      "description": null,
+      "is_private": true,
+      "recurrence": null,
+      "created_at": "2026-02-19T06:31:13.846175",
+      "updated_at": "2026-02-19T06:31:13.846175"
+    },
+    "evt_065": {
+      "id": "evt_065",
+      "title": "전사 미팅",
+      "start": "2026-02-04T22:31:13.846187",
+      "end": "2026-02-04T23:31:13.846187",
+      "organizer_id": "emp_022",
+      "attendees": [
+        {
+          "id": "emp_064",
+          "type": "optional",
+          "response": "accepted"
+        },
+        {
+          "id": "emp_005",
+          "type": "optional",
+          "response": "accepted"
+        },
+        {
+          "id": "emp_051",
+          "type": "optional",
+          "response": "accepted"
+        }
+      ],
+      "location": "회의실 2",
+      "description": null,
+      "is_private": false,
+      "recurrence": null,
+      "created_at": "2026-02-19T06:31:13.846187",
+      "updated_at": "2026-02-19T06:31:13.846187"
+    },
+    "evt_066": {
+      "id": "evt_066",
+      "title": "팀 회의",
+      "start": "2026-01-22T15:31:13.846201",
+      "end": "2026-01-22T17:31:13.846201",
+      "organizer_id": "emp_002",
+      "attendees": [
+        {
+          "id": "emp_056",
+          "type": "optional",
+          "response": "accepted"
+        },
+        {
+          "id": "emp_065",
+          "type": "required",
+          "response": "accepted"
+        }
+      ],
+      "location": "회의실 1",
+      "description": null,
+      "is_private": false,
+      "recurrence": null,
+      "created_at": "2026-02-19T06:31:13.846201",
+      "updated_at": "2026-02-19T06:31:13.846201"
+    },
+    "evt_067": {
+      "id": "evt_067",
+      "title": "프로젝트 킥오프",
+      "start": "2026-01-30T23:31:13.846368",
+      "end": "2026-01-31T01:31:13.846368",
+      "organizer_id": "emp_050",
+      "attendees": [
+        {
+          "id": "emp_040",
+          "type": "optional",
+          "response": "none"
+        },
+        {
+          "id": "emp_048",
+          "type": "optional",
+          "response": "accepted"
+        },
+        {
+          "id": "emp_005",
+          "type": "required",
+          "response": "declined"
+        },
+        {
+          "id": "emp_025",
+          "type": "required",
+          "response": "none"
+        }
+      ],
+      "location": "회의실 2",
+      "description": null,
+      "is_private": false,
+      "recurrence": null,
+      "created_at": "2026-02-19T06:31:13.846368",
+      "updated_at": "2026-02-19T06:31:13.846368"
+    },
+    "evt_068": {
+      "id": "evt_068",
+      "title": "1:1 미팅",
+      "start": "2026-03-10T17:31:13.846397",
+      "end": "2026-03-10T19:31:13.846397",
+      "organizer_id": "emp_020",
+      "attendees": [
+        {
+          "id": "emp_044",
+          "type": "required",
+          "response": "accepted"
+        },
+        {
+          "id": "emp_060",
+          "type": "required",
+          "response": "declined"
+        },
+        {
+          "id": "emp_015",
+          "type": "required",
+          "response": "accepted"
+        }
+      ],
+      "location": "회의실 1",
+      "description": null,
+      "is_private": true,
+      "recurrence": null,
+      "created_at": "2026-02-19T06:31:13.846397",
+      "updated_at": "2026-02-19T06:31:13.846397"
+    },
+    "evt_069": {
+      "id": "evt_069",
+      "title": "전사 미팅",
+      "start": "2026-02-14T00:31:13.846413",
+      "end": "2026-02-14T02:31:13.846413",
+      "organizer_id": "emp_032",
+      "attendees": [
+        {
+          "id": "emp_057",
+          "type": "optional",
+          "response": "accepted"
+        },
+        {
+          "id": "emp_044",
+          "type": "optional",
+          "response": "declined"
+        }
+      ],
+      "location": "회의실 2",
+      "description": null,
+      "is_private": true,
+      "recurrence": null,
+      "created_at": "2026-02-19T06:31:13.846413",
+      "updated_at": "2026-02-19T06:31:13.846413"
+    },
+    "evt_070": {
+      "id": "evt_070",
+      "title": "스프린트 회고",
+      "start": "2026-02-19T14:31:13.846428",
+      "end": "2026-02-19T15:31:13.846428",
+      "organizer_id": "emp_062",
+      "attendees": [
+        {
+          "id": "emp_032",
+          "type": "optional",
+          "response": "declined"
+        },
+        {
+          "id": "emp_038",
+          "type": "required",
+          "response": "none"
+        },
+        {
+          "id": "emp_026",
+          "type": "optional",
+          "response": "declined"
+        },
+        {
+          "id": "emp_036",
+          "type": "optional",
+          "response": "none"
+        },
+        {
+          "id": "emp_046",
+          "type": "optional",
+          "response": "declined"
+        }
+      ],
+      "location": "회의실 4",
+      "description": null,
+      "is_private": false,
+      "recurrence": null,
+      "created_at": "2026-02-19T06:31:13.846428",
+      "updated_at": "2026-02-19T06:31:13.846428"
+    },
+    "evt_071": {
+      "id": "evt_071",
+      "title": "1:1 미팅",
+      "start": "2026-03-11T20:31:13.846455",
+      "end": "2026-03-11T21:31:13.846455",
+      "organizer_id": "emp_049",
+      "attendees": [
+        {
+          "id": "emp_014",
+          "type": "optional",
+          "response": "accepted"
+        }
+      ],
+      "location": "회의실 3",
+      "description": null,
+      "is_private": true,
+      "recurrence": null,
+      "created_at": "2026-02-19T06:31:13.846455",
+      "updated_at": "2026-02-19T06:31:13.846455"
+    },
+    "evt_072": {
+      "id": "evt_072",
+      "title": "스프린트 회고",
+      "start": "2026-02-06T22:31:13.846467",
+      "end": "2026-02-07T00:31:13.846467",
+      "organizer_id": "emp_023",
+      "attendees": [
+        {
+          "id": "emp_007",
+          "type": "required",
+          "response": "accepted"
+        },
+        {
+          "id": "emp_017",
+          "type": "required",
+          "response": "declined"
+        },
+        {
+          "id": "emp_050",
+          "type": "optional",
+          "response": "accepted"
+        },
+        {
+          "id": "emp_009",
+          "type": "required",
+          "response": "declined"
+        }
+      ],
+      "location": "회의실 5",
+      "description": null,
+      "is_private": true,
+      "recurrence": null,
+      "created_at": "2026-02-19T06:31:13.846467",
+      "updated_at": "2026-02-19T06:31:13.846467"
+    },
+    "evt_073": {
+      "id": "evt_073",
+      "title": "프로젝트 킥오프",
+      "start": "2026-01-29T23:31:13.846480",
+      "end": "2026-01-30T00:31:13.846480",
+      "organizer_id": "emp_013",
+      "attendees": [
+        {
+          "id": "emp_062",
+          "type": "optional",
+          "response": "declined"
+        },
+        {
+          "id": "emp_023",
+          "type": "optional",
+          "response": "none"
+        },
+        {
+          "id": "emp_019",
+          "type": "optional",
+          "response": "declined"
+        }
+      ],
+      "location": "회의실 1",
+      "description": null,
+      "is_private": true,
+      "recurrence": null,
+      "created_at": "2026-02-19T06:31:13.846480",
+      "updated_at": "2026-02-19T06:31:13.846480"
+    },
+    "evt_074": {
+      "id": "evt_074",
+      "title": "디자인 리뷰",
+      "start": "2026-03-15T16:31:13.846500",
+      "end": "2026-03-15T18:31:13.846500",
+      "organizer_id": "emp_020",
+      "attendees": [
+        {
+          "id": "emp_004",
+          "type": "optional",
+          "response": "declined"
+        },
+        {
+          "id": "emp_026",
+          "type": "required",
+          "response": "accepted"
+        }
+      ],
+      "location": "회의실 1",
+      "description": null,
+      "is_private": true,
+      "recurrence": null,
+      "created_at": "2026-02-19T06:31:13.846500",
+      "updated_at": "2026-02-19T06:31:13.846500"
+    },
+    "evt_075": {
+      "id": "evt_075",
+      "title": "디자인 리뷰",
+      "start": "2026-03-13T14:31:13.846512",
+      "end": "2026-03-13T15:31:13.846512",
+      "organizer_id": "emp_018",
+      "attendees": [
+        {
+          "id": "emp_015",
+          "type": "required",
+          "response": "none"
+        },
+        {
+          "id": "emp_037",
+          "type": "required",
+          "response": "accepted"
+        },
+        {
+          "id": "emp_017",
+          "type": "required",
+          "response": "declined"
+        },
+        {
+          "id": "emp_067",
+          "type": "optional",
+          "response": "accepted"
+        }
+      ],
+      "location": "회의실 1",
+      "description": null,
+      "is_private": true,
+      "recurrence": null,
+      "created_at": "2026-02-19T06:31:13.846512",
+      "updated_at": "2026-02-19T06:31:13.846512"
+    },
+    "evt_076": {
+      "id": "evt_076",
+      "title": "디자인 리뷰",
+      "start": "2026-03-20T00:31:13.846525",
+      "end": "2026-03-20T01:31:13.846525",
+      "organizer_id": "emp_037",
+      "attendees": [
+        {
+          "id": "emp_006",
+          "type": "optional",
+          "response": "declined"
+        },
+        {
+          "id": "emp_023",
+          "type": "required",
+          "response": "none"
+        },
+        {
+          "id": "emp_028",
+          "type": "required",
+          "response": "declined"
+        },
+        {
+          "id": "emp_029",
+          "type": "required",
+          "response": "accepted"
+        }
+      ],
+      "location": "회의실 3",
+      "description": null,
+      "is_private": true,
+      "recurrence": null,
+      "created_at": "2026-02-19T06:31:13.846525",
+      "updated_at": "2026-02-19T06:31:13.846525"
+    },
+    "evt_077": {
+      "id": "evt_077",
+      "title": "스프린트 회고",
+      "start": "2026-02-10T16:31:13.846537",
+      "end": "2026-02-10T18:31:13.846537",
+      "organizer_id": "emp_044",
+      "attendees": [
+        {
+          "id": "emp_060",
+          "type": "optional",
+          "response": "none"
+        }
+      ],
+      "location": "회의실 3",
+      "description": null,
+      "is_private": false,
+      "recurrence": null,
+      "created_at": "2026-02-19T06:31:13.846537",
+      "updated_at": "2026-02-19T06:31:13.846537"
+    },
+    "evt_078": {
+      "id": "evt_078",
+      "title": "전사 미팅",
+      "start": "2026-03-09T22:31:13.846548",
+      "end": "2026-03-10T00:31:13.846548",
+      "organizer_id": "emp_054",
+      "attendees": [
+        {
+          "id": "emp_066",
+          "type": "required",
+          "response": "none"
+        },
+        {
+          "id": "emp_032",
+          "type": "optional",
+          "response": "none"
+        },
+        {
+          "id": "emp_023",
+          "type": "required",
+          "response": "none"
+        },
+        {
+          "id": "emp_037",
+          "type": "optional",
+          "response": "declined"
+        }
+      ],
+      "location": "회의실 2",
+      "description": null,
+      "is_private": true,
+      "recurrence": null,
+      "created_at": "2026-02-19T06:31:13.846548",
+      "updated_at": "2026-02-19T06:31:13.846548"
+    },
+    "evt_079": {
+      "id": "evt_079",
+      "title": "1:1 미팅",
+      "start": "2026-02-15T15:31:13.846560",
+      "end": "2026-02-15T16:31:13.846560",
+      "organizer_id": "emp_060",
+      "attendees": [
+        {
+          "id": "emp_015",
+          "type": "optional",
+          "response": "none"
+        },
+        {
+          "id": "emp_025",
+          "type": "optional",
+          "response": "none"
+        },
+        {
+          "id": "emp_011",
+          "type": "optional",
+          "response": "declined"
+        }
+      ],
+      "location": "회의실 2",
+      "description": null,
+      "is_private": false,
+      "recurrence": null,
+      "created_at": "2026-02-19T06:31:13.846560",
+      "updated_at": "2026-02-19T06:31:13.846560"
+    },
+    "evt_080": {
+      "id": "evt_080",
+      "title": "프로젝트 킥오프",
+      "start": "2026-01-25T00:31:13.846572",
+      "end": "2026-01-25T02:31:13.846572",
+      "organizer_id": "emp_003",
+      "attendees": [
+        {
+          "id": "emp_015",
+          "type": "optional",
+          "response": "declined"
+        },
+        {
+          "id": "emp_068",
+          "type": "required",
+          "response": "accepted"
+        },
+        {
+          "id": "emp_035",
+          "type": "optional",
+          "response": "declined"
+        }
+      ],
+      "location": "회의실 1",
+      "description": null,
+      "is_private": false,
+      "recurrence": null,
+      "created_at": "2026-02-19T06:31:13.846572",
+      "updated_at": "2026-02-19T06:31:13.846572"
+    },
+    "evt_081": {
+      "id": "evt_081",
+      "title": "팀 회의",
+      "start": "2026-02-19T22:31:13.846584",
+      "end": "2026-02-20T00:31:13.846584",
+      "organizer_id": "emp_059",
+      "attendees": [
+        {
+          "id": "emp_036",
+          "type": "required",
+          "response": "declined"
+        },
+        {
+          "id": "emp_027",
+          "type": "optional",
+          "response": "accepted"
+        },
+        {
+          "id": "emp_019",
+          "type": "required",
+          "response": "none"
+        }
+      ],
+      "location": "회의실 2",
+      "description": null,
+      "is_private": false,
+      "recurrence": null,
+      "created_at": "2026-02-19T06:31:13.846584",
+      "updated_at": "2026-02-19T06:31:13.846584"
+    },
+    "evt_082": {
+      "id": "evt_082",
+      "title": "전사 미팅",
+      "start": "2026-02-05T20:31:13.846597",
+      "end": "2026-02-05T21:31:13.846597",
+      "organizer_id": "emp_018",
+      "attendees": [
+        {
+          "id": "emp_016",
+          "type": "optional",
+          "response": "accepted"
+        },
+        {
+          "id": "emp_053",
+          "type": "required",
+          "response": "declined"
+        }
+      ],
+      "location": "회의실 2",
+      "description": null,
+      "is_private": true,
+      "recurrence": null,
+      "created_at": "2026-02-19T06:31:13.846597",
+      "updated_at": "2026-02-19T06:31:13.846597"
+    },
+    "evt_083": {
+      "id": "evt_083",
+      "title": "프로젝트 킥오프",
+      "start": "2026-02-01T22:31:13.846611",
+      "end": "2026-02-02T00:31:13.846611",
+      "organizer_id": "emp_017",
+      "attendees": [
+        {
+          "id": "emp_049",
+          "type": "optional",
+          "response": "accepted"
+        },
+        {
+          "id": "emp_033",
+          "type": "optional",
+          "response": "accepted"
+        }
+      ],
+      "location": "회의실 2",
+      "description": null,
+      "is_private": true,
+      "recurrence": null,
+      "created_at": "2026-02-19T06:31:13.846611",
+      "updated_at": "2026-02-19T06:31:13.846611"
+    },
+    "evt_084": {
+      "id": "evt_084",
+      "title": "팀 회의",
+      "start": "2026-01-29T00:31:13.846623",
+      "end": "2026-01-29T02:31:13.846623",
+      "organizer_id": "emp_043",
+      "attendees": [
+        {
+          "id": "emp_055",
+          "type": "required",
+          "response": "none"
+        },
+        {
+          "id": "emp_001",
+          "type": "optional",
+          "response": "declined"
+        }
+      ],
+      "location": "회의실 4",
+      "description": null,
+      "is_private": false,
+      "recurrence": null,
+      "created_at": "2026-02-19T06:31:13.846623",
+      "updated_at": "2026-02-19T06:31:13.846623"
+    },
+    "evt_085": {
+      "id": "evt_085",
+      "title": "스프린트 회고",
+      "start": "2026-02-23T16:31:13.846635",
+      "end": "2026-02-23T17:31:13.846635",
+      "organizer_id": "emp_022",
+      "attendees": [
+        {
+          "id": "emp_047",
+          "type": "required",
+          "response": "accepted"
+        },
+        {
+          "id": "emp_056",
+          "type": "required",
+          "response": "none"
+        }
+      ],
+      "location": "회의실 3",
+      "description": null,
+      "is_private": false,
+      "recurrence": null,
+      "created_at": "2026-02-19T06:31:13.846635",
+      "updated_at": "2026-02-19T06:31:13.846635"
+    },
+    "evt_086": {
+      "id": "evt_086",
+      "title": "1:1 미팅",
+      "start": "2026-01-24T18:31:13.846646",
+      "end": "2026-01-24T19:31:13.846646",
+      "organizer_id": "emp_054",
+      "attendees": [
+        {
+          "id": "emp_013",
+          "type": "required",
+          "response": "accepted"
+        },
+        {
+          "id": "emp_029",
+          "type": "required",
+          "response": "declined"
+        },
+        {
+          "id": "emp_002",
+          "type": "required",
+          "response": "declined"
+        }
+      ],
+      "location": "회의실 4",
+      "description": null,
+      "is_private": true,
+      "recurrence": null,
+      "created_at": "2026-02-19T06:31:13.846646",
+      "updated_at": "2026-02-19T06:31:13.846646"
+    },
+    "evt_087": {
+      "id": "evt_087",
+      "title": "전사 미팅",
+      "start": "2026-01-28T15:31:13.846661",
+      "end": "2026-01-28T17:31:13.846661",
+      "organizer_id": "emp_049",
+      "attendees": [
+        {
+          "id": "emp_054",
+          "type": "optional",
+          "response": "none"
+        },
+        {
+          "id": "emp_028",
+          "type": "optional",
+          "response": "declined"
+        },
+        {
+          "id": "emp_025",
+          "type": "optional",
+          "response": "declined"
+        },
+        {
+          "id": "emp_027",
+          "type": "optional",
+          "response": "none"
+        }
+      ],
+      "location": "회의실 5",
+      "description": null,
+      "is_private": false,
+      "recurrence": null,
+      "created_at": "2026-02-19T06:31:13.846661",
+      "updated_at": "2026-02-19T06:31:13.846661"
+    },
+    "evt_088": {
+      "id": "evt_088",
+      "title": "팀 회의",
+      "start": "2026-02-20T19:31:13.846675",
+      "end": "2026-02-20T20:31:13.846675",
+      "organizer_id": "emp_032",
+      "attendees": [
+        {
+          "id": "emp_034",
+          "type": "required",
+          "response": "declined"
+        },
+        {
+          "id": "emp_043",
+          "type": "required",
+          "response": "none"
+        },
+        {
+          "id": "emp_044",
+          "type": "required",
+          "response": "none"
+        },
+        {
+          "id": "emp_053",
+          "type": "required",
+          "response": "accepted"
+        },
+        {
+          "id": "emp_029",
+          "type": "optional",
+          "response": "accepted"
+        }
+      ],
+      "location": "회의실 4",
+      "description": null,
+      "is_private": true,
+      "recurrence": null,
+      "created_at": "2026-02-19T06:31:13.846675",
+      "updated_at": "2026-02-19T06:31:13.846675"
+    },
+    "evt_089": {
+      "id": "evt_089",
+      "title": "디자인 리뷰",
+      "start": "2026-03-16T21:31:13.846688",
+      "end": "2026-03-16T23:31:13.846688",
+      "organizer_id": "emp_002",
+      "attendees": [
+        {
+          "id": "emp_044",
+          "type": "optional",
+          "response": "accepted"
+        },
+        {
+          "id": "emp_055",
+          "type": "optional",
+          "response": "accepted"
+        },
+        {
+          "id": "emp_049",
+          "type": "optional",
+          "response": "declined"
+        }
+      ],
+      "location": "회의실 2",
+      "description": null,
+      "is_private": false,
+      "recurrence": null,
+      "created_at": "2026-02-19T06:31:13.846688",
+      "updated_at": "2026-02-19T06:31:13.846688"
+    },
+    "evt_090": {
+      "id": "evt_090",
+      "title": "1:1 미팅",
+      "start": "2026-02-13T15:31:13.846699",
+      "end": "2026-02-13T17:31:13.846699",
+      "organizer_id": "emp_051",
+      "attendees": [
+        {
+          "id": "emp_022",
+          "type": "optional",
+          "response": "accepted"
+        }
+      ],
+      "location": "회의실 1",
+      "description": null,
+      "is_private": true,
+      "recurrence": null,
+      "created_at": "2026-02-19T06:31:13.846699",
+      "updated_at": "2026-02-19T06:31:13.846699"
+    },
+    "evt_091": {
+      "id": "evt_091",
+      "title": "디자인 리뷰",
+      "start": "2026-02-11T23:31:13.846709",
+      "end": "2026-02-12T01:31:13.846709",
+      "organizer_id": "emp_054",
+      "attendees": [
+        {
+          "id": "emp_002",
+          "type": "optional",
+          "response": "accepted"
+        }
+      ],
+      "location": "회의실 5",
+      "description": null,
+      "is_private": false,
+      "recurrence": null,
+      "created_at": "2026-02-19T06:31:13.846709",
+      "updated_at": "2026-02-19T06:31:13.846709"
+    },
+    "evt_092": {
+      "id": "evt_092",
+      "title": "1:1 미팅",
+      "start": "2026-02-13T18:31:13.846721",
+      "end": "2026-02-13T19:31:13.846721",
+      "organizer_id": "emp_016",
+      "attendees": [
+        {
+          "id": "emp_043",
+          "type": "required",
+          "response": "none"
+        },
+        {
+          "id": "emp_055",
+          "type": "optional",
+          "response": "none"
+        },
+        {
+          "id": "emp_031",
+          "type": "optional",
+          "response": "declined"
+        },
+        {
+          "id": "emp_008",
+          "type": "required",
+          "response": "none"
+        },
+        {
+          "id": "emp_016",
+          "type": "required",
+          "response": "none"
+        }
+      ],
+      "location": "회의실 3",
+      "description": null,
+      "is_private": true,
+      "recurrence": null,
+      "created_at": "2026-02-19T06:31:13.846721",
+      "updated_at": "2026-02-19T06:31:13.846721"
+    },
+    "evt_093": {
+      "id": "evt_093",
+      "title": "팀 회의",
+      "start": "2026-02-18T00:31:13.846747",
+      "end": "2026-02-18T01:31:13.846747",
+      "organizer_id": "emp_067",
+      "attendees": [
+        {
+          "id": "emp_030",
+          "type": "required",
+          "response": "declined"
+        },
+        {
+          "id": "emp_008",
+          "type": "optional",
+          "response": "none"
+        },
+        {
+          "id": "emp_042",
+          "type": "required",
+          "response": "declined"
+        }
+      ],
+      "location": "회의실 3",
+      "description": null,
+      "is_private": true,
+      "recurrence": null,
+      "created_at": "2026-02-19T06:31:13.846747",
+      "updated_at": "2026-02-19T06:31:13.846747"
+    },
+    "evt_094": {
+      "id": "evt_094",
+      "title": "디자인 리뷰",
+      "start": "2026-03-05T19:31:13.846763",
+      "end": "2026-03-05T21:31:13.846763",
+      "organizer_id": "emp_043",
+      "attendees": [
+        {
+          "id": "emp_023",
+          "type": "optional",
+          "response": "none"
+        },
+        {
+          "id": "emp_042",
+          "type": "required",
+          "response": "accepted"
+        }
+      ],
+      "location": "회의실 2",
+      "description": null,
+      "is_private": false,
+      "recurrence": null,
+      "created_at": "2026-02-19T06:31:13.846763",
+      "updated_at": "2026-02-19T06:31:13.846763"
+    },
+    "evt_095": {
+      "id": "evt_095",
+      "title": "프로젝트 킥오프",
+      "start": "2026-02-24T15:31:13.846775",
+      "end": "2026-02-24T17:31:13.846775",
+      "organizer_id": "emp_047",
+      "attendees": [
+        {
+          "id": "emp_017",
+          "type": "required",
+          "response": "none"
+        },
+        {
+          "id": "emp_025",
+          "type": "optional",
+          "response": "none"
+        },
+        {
+          "id": "emp_002",
+          "type": "optional",
+          "response": "declined"
+        }
+      ],
+      "location": "회의실 3",
+      "description": null,
+      "is_private": false,
+      "recurrence": null,
+      "created_at": "2026-02-19T06:31:13.846775",
+      "updated_at": "2026-02-19T06:31:13.846775"
+    },
+    "evt_096": {
+      "id": "evt_096",
+      "title": "1:1 미팅",
+      "start": "2026-01-28T00:31:13.846788",
+      "end": "2026-01-28T01:31:13.846788",
+      "organizer_id": "emp_033",
+      "attendees": [
+        {
+          "id": "emp_039",
+          "type": "optional",
+          "response": "none"
+        },
+        {
+          "id": "emp_068",
+          "type": "required",
+          "response": "none"
+        },
+        {
+          "id": "emp_062",
+          "type": "required",
+          "response": "accepted"
+        }
+      ],
+      "location": "회의실 5",
+      "description": null,
+      "is_private": true,
+      "recurrence": null,
+      "created_at": "2026-02-19T06:31:13.846788",
+      "updated_at": "2026-02-19T06:31:13.846788"
+    },
+    "evt_097": {
+      "id": "evt_097",
+      "title": "프로젝트 킥오프",
+      "start": "2026-02-11T17:31:13.846800",
+      "end": "2026-02-11T18:31:13.846800",
+      "organizer_id": "emp_007",
+      "attendees": [
+        {
+          "id": "emp_001",
+          "type": "optional",
+          "response": "none"
+        },
+        {
+          "id": "emp_063",
+          "type": "optional",
+          "response": "accepted"
+        },
+        {
+          "id": "emp_017",
+          "type": "optional",
+          "response": "accepted"
+        },
+        {
+          "id": "emp_046",
+          "type": "optional",
+          "response": "declined"
+        }
+      ],
+      "location": "회의실 3",
+      "description": null,
+      "is_private": false,
+      "recurrence": null,
+      "created_at": "2026-02-19T06:31:13.846800",
+      "updated_at": "2026-02-19T06:31:13.846800"
+    },
+    "evt_098": {
+      "id": "evt_098",
+      "title": "1:1 미팅",
+      "start": "2026-01-26T20:31:13.846812",
+      "end": "2026-01-26T22:31:13.846812",
+      "organizer_id": "emp_022",
+      "attendees": [
+        {
+          "id": "emp_016",
+          "type": "optional",
+          "response": "accepted"
+        },
+        {
+          "id": "emp_035",
+          "type": "required",
+          "response": "accepted"
+        }
+      ],
+      "location": "회의실 5",
+      "description": null,
+      "is_private": false,
+      "recurrence": null,
+      "created_at": "2026-02-19T06:31:13.846812",
+      "updated_at": "2026-02-19T06:31:13.846812"
+    },
+    "evt_099": {
+      "id": "evt_099",
+      "title": "전사 미팅",
+      "start": "2026-01-28T14:31:13.846824",
+      "end": "2026-01-28T15:31:13.846824",
+      "organizer_id": "emp_055",
+      "attendees": [
+        {
+          "id": "emp_055",
+          "type": "required",
+          "response": "none"
+        },
+        {
+          "id": "emp_012",
+          "type": "required",
+          "response": "declined"
+        },
+        {
+          "id": "emp_065",
+          "type": "optional",
+          "response": "declined"
+        }
+      ],
+      "location": "회의실 3",
+      "description": null,
+      "is_private": true,
+      "recurrence": null,
+      "created_at": "2026-02-19T06:31:13.846824",
+      "updated_at": "2026-02-19T06:31:13.846824"
     }
-  ]
-  
+  }
+}

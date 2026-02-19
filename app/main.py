@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from app.routers import calendar
+from app.routers import calendar, employee, mock
 
 app = FastAPI(
     title="My FastAPI Service",
@@ -8,6 +8,8 @@ app = FastAPI(
 )
 
 app.include_router(calendar.router)
+app.include_router(employee.router)
+app.include_router(mock.router)
 
 @app.get("/")
 def root():
