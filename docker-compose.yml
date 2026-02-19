@@ -1,9 +1,13 @@
 version: "3.9"
 
 services:
-  api:
+  fastapi:
     build: .
-    container_name: gin-hello-api
+    container_name: fastapi_app
     ports:
-      - "8080:8080"
-    restart: unless-stopped
+      - "8000:8000"
+    volumes:
+      - .:/app
+    env_file:
+      - .env
+    restart: always

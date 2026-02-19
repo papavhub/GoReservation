@@ -1,0 +1,23 @@
+[
+    {
+      "id": 1,
+      "email": "user1@example.com",
+      "name": "User1",
+      "age": 28,
+      "gender": "F",
+      "phone": "010-4821-9034",
+      "isActive": true,
+      "createdAt": "2024-11-02T13:21:44.123Z"
+    },
+    {
+      "id": 2,
+      "email": "user2@example.com",
+      "name": "User2",
+      "age": 41,
+      "gender": "M",
+      "phone": "010-7734-1182",
+      "isActive": false,
+      "createdAt": "2023-07-18T02:09:10.532Z"
+    }
+  ]
+  
