@@ -5,88 +5,191 @@ import random
 from datetime import datetime
 
 router = APIRouter(
-    prefix="/employees",
+    prefix="",
     tags=["Employees"]
 )
 
 DATA_DIR = Path("data")
 USER_FILE = DATA_DIR / "users.json"
 
-DEPARTMENTS = [
-    ("dept_company", "회사", None),
-    ("dept_tech", "기술본부", "dept_company"),
-    ("dept_dev", "개발팀", "dept_tech"),
-    ("dept_design", "디자인팀", "dept_tech"),
-    ("dept_hr", "인사팀", "dept_company"),
-]
+from fastapi import Query, Path, HTTPException
 
-POSITIONS = ["사원", "주임", "대리", "선임", "팀장"]
-KOREAN_LAST = ["김", "이", "박", "최", "정", "강"]
-KOREAN_FIRST = ["민수", "서연", "지훈", "지민", "하늘", "수빈"]
+def load_data():
+    if not USER_FILE.exists():
+        raise HTTPException(status_code=404, detail="Data not generated. Call /refresh first.")
+    return json.loads(USER_FILE.read_text(encoding="utf-8"))
 
 
-@router.get("/refresh")
-def refresh_users():
+def build_department_path(departments, dept_id):
+    path = []
+    current = departments.get(dept_id)
 
-    DATA_DIR.mkdir(exist_ok=True)
+    while current:
+        path.insert(0, current["name"])
+        parent_id = current["parent_id"]
+        current = departments.get(parent_id) if parent_id else None
 
-    employee_count = random.randint(30, 80)
+    return path
 
-    departments = {}
-    employees = {}
 
-    # 부서 생성
-    for dept_id, name, parent in DEPARTMENTS:
-        departments[dept_id] = {
-            "id": dept_id,
-            "name": name,
-            "parent_id": parent,
-            "manager_id": None
-        }
+# 1. 직원 검색
+@router.get("/employees/search")
+def employee_search(
+    q: str = Query(...),
+    limit: int = Query(20),
+    offset: int = Query(0)
+):
+    data = load_data()
+    departments = data["departments"]
+    employees = data["employees"]
 
-    # 직원 생성
-    for i in range(1, employee_count + 1):
-        emp_id = f"emp_{i:03d}"
-        name = random.choice(KOREAN_LAST) + random.choice(KOREAN_FIRST)
-        dept_id = random.choice(list(departments.keys()))
+    results = []
 
-        employees[emp_id] = {
-            "id": emp_id,
-            "name": name,
-            "email": f"{emp_id}@company.com",
-            "department_id": dept_id,
-            "position": random.choice(POSITIONS),
-            "phone": f"010-{random.randint(1000,9999)}-{random.randint(1000,9999)}",
-            "office_location": f"본관 {random.randint(2,5)}층",
-            "manager_id": None,
-            "joined_date": f"20{random.randint(18,23)}-0{random.randint(1,9)}-01",
-            "profile_image": None
-        }
+    for emp in employees.values():
+        dept = departments.get(emp["department_id"])
 
-    # 각 부서에 랜덤 매니저 지정
-    for dept in departments.values():
-        dept_members = [
-            emp_id for emp_id, emp in employees.items()
-            if emp["department_id"] == dept["id"]
-        ]
-        if dept_members:
-            manager_id = random.choice(dept_members)
-            dept["manager_id"] = manager_id
+        if (
+            q.lower() in emp["name"].lower()
+            or q.lower() in emp["email"].lower()
+            or (dept and q.lower() in dept["name"].lower())
+        ):
+            results.append({
+                "id": emp["id"],
+                "name": emp["name"],
+                "email": emp["email"],
+                "department": {
+                    "id": dept["id"],
+                    "name": dept["name"]
+                },
+                "position": emp["position"],
+                "phone": emp["phone"],
+                "profile_image": emp["profile_image"]
+            })
 
-    data = {
-        "meta": {
-            "generated_at": datetime.now().isoformat()
-        },
-        "departments": departments,
-        "employees": employees
-    }
-
-    USER_FILE.write_text(
-        json.dumps(data, indent=2, ensure_ascii=False)
-    )
+    total = len(results)
 
     return {
-        "status": "ok",
-        "generated_employees": employee_count,
-        "generated_departments": len(departments)
+        "total": total,
+        "employees": results[offset:offset + limit]
     }
+
+
+# 2. 직원 상세 조회
+@router.get("/employees/{employee_id}")
+def employee_detail(
+    employee_id: str = Path(...)
+):
+    data = load_data()
+    departments = data["departments"]
+    employees = data["employees"]
+
+    emp = employees.get(employee_id)
+
+    if not emp:
+        raise HTTPException(status_code=404, detail="Employee not found")
+
+    dept = departments.get(emp["department_id"])
+
+    manager = None
+    if dept and dept.get("manager_id"):
+        manager_emp = employees.get(dept["manager_id"])
+        if manager_emp:
+            manager = {
+                "id": manager_emp["id"],
+                "name": manager_emp["name"]
+            }
+
+    return {
+        "id": emp["id"],
+        "name": emp["name"],
+        "email": emp["email"],
+        "department": {
+            "id": dept["id"],
+            "name": dept["name"],
+            "path": build_department_path(departments, dept["id"])
+        },
+        "position": emp["position"],
+        "phone": emp["phone"],
+        "office_location": emp["office_location"],
+        "manager": manager,
+        "profile_image": emp["profile_image"],
+        "joined_date": emp["joined_date"]
+    }
+
+
+# 3. 팀/부서 멤버 조회
+@router.get("/departments/{department_id}/members")
+def department_members(
+    department_id: str,
+    include_sub: bool = Query(False)
+):
+    data = load_data()
+    departments = data["departments"]
+    employees = data["employees"]
+
+    dept = departments.get(department_id)
+
+    if not dept:
+        raise HTTPException(status_code=404, detail="Department not found")
+
+    target_depts = {department_id}
+
+    if include_sub:
+        for d in departments.values():
+            if d["parent_id"] == department_id:
+                target_depts.add(d["id"])
+
+    members = [
+        {
+            "id": emp["id"],
+            "name": emp["name"],
+            "email": emp["email"],
+            "position": emp["position"]
+        }
+        for emp in employees.values()
+        if emp["department_id"] in target_depts
+    ]
+
+    return {
+        "department": {
+            "id": dept["id"],
+            "name": dept["name"]
+        },
+        "members": members,
+        "total": len(members)
+    }
+
+
+# 4. 조직도 조회
+@router.get("/organization")
+def organization():
+    data = load_data()
+    departments = data["departments"]
+    employees = data["employees"]
+
+    result = []
+
+    for dept in departments.values():
+        member_count = len([
+            emp for emp in employees.values()
+            if emp["department_id"] == dept["id"]
+        ])
+
+        manager = None
+        if dept.get("manager_id"):
+            manager_emp = employees.get(dept["manager_id"])
+            if manager_emp:
+                manager = {
+                    "id": manager_emp["id"],
+                    "name": manager_emp["name"]
+                }
+
+        result.append({
+            "id": dept["id"],
+            "name": dept["name"],
+            "parent_id": dept["parent_id"],
+            "member_count": member_count,
+            "manager": manager
+        })
+
+    return {"departments": result}
